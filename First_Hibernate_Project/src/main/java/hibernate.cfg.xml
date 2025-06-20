@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  
+<!DOCTYPE hibernate-configuration PUBLIC 
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/HBdatabase</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">Patil@2003</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+		<property name="connection.pool_size">10</property>
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+<!-- 		<mapping resource="emp.hbm.xml" />  -->	
+
+<!-- 		<mapping class="com.Annotations.Student" />  -->
+<!--  		<mapping class="com.savinImgIntoDatabase.Address" /> -->
+			<!-- <mapping class="com.org.embeddableObject.Stud1" />
+			<mapping class="com.org.embeddableObject.Certificate" /> -->
+			<!-- <mapping class="com.org.fetchingData.Person" /> -->
+			<!-- <mapping class="com.org.OneToOne_Mapping.Answer" />
+			<mapping class="com.org.OneToOne_Mapping.Question" /> -->
+			
+ 			<!-- <mapping class="com.org.OneToMany.Answer1" />
+			<mapping class="com.org.OneToMany.Question1" /> --> 
+			
+			<!-- <mapping class="com.bankCustomer.Customer" />
+			<mapping class="com.bankCustomer.BankAccounts" /> -->
+			
+			<!-- <mapping class="com.org.manyToMany.Employee" />
+			<mapping class="com.org.manyToMany.Project" /> -->
+			
+			<mapping class="com.org.criteriaAPI.Laptop" />
+ </session-factory>
+</hibernate-configuration>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<!DOCTYPE hibernate-configuration PUBLIC  
+   "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+   "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">  
+ 
+<hibernate-configuration>  
+   <session-factory>             session-factory is same like Connection interface in JAvajdbc,DataSource interface in SpringCore jdbc
+       <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+       <property name="connection.url">jdbc:mysql://localhost:3306/hiberdb1</property>
+       <property name="connection.username">root</property>
+       <property name="connection.password">12345pnn</property>
+       <property name="dialect">org.hibernate.dialect.MySQL8Dialect</property> 
+     
+                        dialect a form of a language/query that is belongs to the specific database and its version.
+                          means by setting dialect we are telling to hiberante that hibernate please fire query related to mysql database having 8 verison
+
+        insert=> create
+            fetch/get  => update
+            <property name="hbm2ddl.auto">create</property>       for fetching data => update
+                                                   for inserting/deleting/updating data => create
+         <property name="show_sql">true</property>        this show_sql true can shows the queries on the console that hibernate fire in the background after running of the applicarion
+      
+       <property name="format_sql">true</property>    this foramat_sql true can format the queries that hibernate fire in the background after running of the applicarion
+   
+          </session-factory>
+          </hibernate-configuration> -->
