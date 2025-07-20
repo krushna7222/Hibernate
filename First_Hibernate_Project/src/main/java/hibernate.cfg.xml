@@ -22,7 +22,7 @@
 <!--  		<mapping class="com.savinImgIntoDatabase.Address" /> -->
 			<!-- <mapping class="com.org.embeddableObject.Stud1" />
 			<mapping class="com.org.embeddableObject.Certificate" /> -->
-			<!-- <mapping class="com.org.fetchingData.Person" /> -->
+			 <mapping class="com.org.fetchingData.Person" />
 			<!-- <mapping class="com.org.OneToOne_Mapping.Answer" />
 			<mapping class="com.org.OneToOne_Mapping.Question" /> -->
 			
@@ -35,8 +35,8 @@
 			<!-- <mapping class="com.org.manyToMany.Employee" />
 			<mapping class="com.org.manyToMany.Project" /> -->
 			
-			<mapping class="com.org.criteriaAPI.Laptop" />
- </session-factory>
+<!-- 			<mapping class="com.org.criteriaAPI.Laptop" />
+ --> </session-factory>
 </hibernate-configuration>
 
 
