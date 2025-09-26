@@ -14,7 +14,7 @@ public class TablePerSubClass_Main {
          Session session= new Configuration().configure().buildSessionFactory().openSession();
     
          
-         TeamIndia2 t1=new TeamIndia2("Ravi","Shastri");
+         TeamIndia2 t1= new TeamIndia2("Ravi","Shastri");
               
          Batsman2 rohit= new Batsman2("right",78.3);
              rohit.setFname("roh");   //parents
